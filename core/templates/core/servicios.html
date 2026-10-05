@@ -20,9 +20,9 @@
       <!-- {% for servicio in servicios %}: repite este <tr> una vez por cada elemento de la lista -->
       {% for servicio in servicios %}
       <tr class="border-t border-slate-200">
-        <!-- {{ servicio.nombre }}: accede a la clave 'nombre' del diccionario actual -->
-        <td class="px-4 py-2">{{ servicio.nombre }}</td>
-        <!-- {{ servicio.precio }}: accede a la clave 'precio' del diccionario actual -->
+        <!-- {{ servicio.titulo }}: antes decía {{ servicio.nombre }}, ajustado al campo real del modelo -->
+        <td class="px-4 py-2">{{ servicio.titulo }}</td>
+        <!-- {{ servicio.precio }}: accede al campo 'precio' del modelo -->
         <td class="px-4 py-2">${{ servicio.precio }}</td>
       </tr>
       <!-- {% endfor %}: cierra el bucle, obligatorio en Django (a diferencia de Python) -->
